@@ -1,0 +1,19 @@
+sys-apps/i2c *
+x11-plugins/wmmp3 ~amd64
+net-misc/smbc **
+app-text/xpdf ~amd64 
+app-text/poppler ~amd64
+>=dev-ruby/png-1.2.0 ~amd64
+>=net-im/skype-2.2.0.35-r1 ~amd64
+>=www-apps/rutorrent-3.3 ~amd64
+cross-arm-unknown-linux-gnu/binutils * ~* **
+cross-arm-unknown-linux-gnu/gcc arm -amd64 -~amd64
+cross-arm-unknown-linux-gnu/linux-headers * ~* **
+cross-arm-unknown-linux-gnu/glibc * ~* **
+cross-arm-unknown-linux-gnu/gdb arm ~arm -amd64 -~amd64
+cross-arm-unknown-linux-gnu/insight arm ~arm -amd64 -~amd64
+>=net-misc/utelnetd-0.1.9-r1 ~amd64
+=app-emulation/virtualbox-4.1.8 ~amd64
+=app-emulation/virtualbox-modules-4.1.8  ~amd64
+=app-emulation/virtualbox-additions-4.1.8 ~amd64
+=app-emulation/winetricks-744 ~amd64

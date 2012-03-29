@@ -1,0 +1,4 @@
+ifconfig wlan0 up
+iwconfig wlan0 essid Carrara
+pkill dhcpcd
+dhcpcd wlan0

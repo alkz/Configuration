@@ -1,0 +1,7 @@
+if [[ "$1" = "medium" ]]; then
+    cpufreq-set -c 0 -f 1.15g
+    cpufreq-set -c 1 -f 1.15g
+else 
+    cpufreq-set -c 0 -g $1
+    cpufreq-set -c 1 -g $1
+fi

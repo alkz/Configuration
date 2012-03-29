@@ -1,0 +1,109 @@
+hoolbar:						raised solid
+toolbar.height:			     	14
+toolbar.color:					#000000
+toolbar.textColor:			    darkblue	
+toolbar.borderColor:		    darkblue	
+toolbar.borderWidth:			0
+#toolbar.alpha:					255
+
+toolbar.button:				    parentrelative
+toolbar.button.picColor:	    #000000
+toolbar.button.textColor:		darkblue
+toolbar.button.pressed:			raised solid
+toolbar.button.pressed.color:	#000000
+
+toolbar.label:					sunken
+toolbar.label.color:			black
+toolbar.label.textColor:		darkblue	
+
+toolbar.windowLabel:			sunken
+toolbar.windowLabel.color:		darkblue
+toolbar.windowLabel.textColor:	darkblue
+
+toolbar.clock:					sunken
+toolbar.clock.color:			#000000
+toolbar.clock.textColor: 	    white	
+
+toolbar.color:				           black	
+#toolbar.workspace.borderWidth:	       1
+#toolbar.workspace.borderColor:        darkblue	
+toolbar.workspace.textColor:	       white 
+toolbar.justify:				       Center
+toolbar.iconbar.borderColor:   	       black
+#toolbar.iconbar.borderWidth:          1	
+toolbar.iconbar.justify:		       Center	
+toolbar.iconbar.focused.textColor:     white 
+toolbar.iconbar.focused.color: 	       darkblue
+toolbar.iconbar.focused.font: 	       Clean-10:Bold
+toolbar.iconbar.unfocused.textColor:   white 
+
+menu.title:				raised
+menu.title.color:		#000000
+menu.title.textColor:   blue	
+menu.title.justify:		center
+menu.titleHeight		0
+
+menu.frame:					flat solid bevel1
+menu.frame.color:			#000000
+menu.frame.font:			Clean-9:Normal
+menu.frame.textColor:		#ffffff
+menu.frame.justify:			left
+
+menu.hilite:				flat solid bevel1
+menu.hilite.textColor:		blue
+menu.hilite.color:			black
+
+menu.bullet:					triangle
+menu.bullet.position:			right
+
+menu.borderWidth: 				1
+menu.borderColor: 			    darkblue	
+menu.title.font:		Clean-9:Normal
+
+window.title.focus:				rkaised solid
+window.title.focus.color:		#000000
+window.title.unfocus:			raised solid
+window.title.unfocus.color:		#000000
+window.title.height:			20
+window.borderWidth:				1
+window.borderColor: 			darkblue
+
+window.label.focus:				   sunken
+window.label.focus.color:		   #000000
+window.label.focus.textColor:      blue	
+window.label.unfocus:			   raised solid
+window.label.unfocus.color:		   #000000
+window.label.unfocus.textColor:	   darkblue
+
+window.handle.focus:			flat solid
+window.handle.focus.color:		darkblue
+window.handle.unfocus:			flat solid
+window.handle.unfocus.color:	black
+
+window.grip.focus:				raised solid
+window.grip.focus.color:		darkblue
+window.grip.unfocus:			flat solid
+window.grip.unfocus.color:		black
+window.grip.height:				0
+
+window.button.focus:			parentrelative
+window.button.focus.picColor:   blue	
+
+window.button.unfocus:			parentrelative
+window.button.unfocus.picColor:	darkblue
+
+window.button.pressed:			flat solid bevel2
+window.button.pressed.color:	darkblue
+
+window.frame.focusColor:		darkblue
+window.frame.unfocusColor:		black
+
+window.justify:		center
+
+#borderColor:		darkblue
+
+#borderWidth:		1
+#bevelWidth:		1
+#handleWidth:		3
+
+*Font:		Clean-9:Normal

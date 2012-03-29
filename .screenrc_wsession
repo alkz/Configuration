@@ -1,0 +1,25 @@
+defbce "on"
+backtick 1 5 5 screen-processor.sh
+backtick 2 5 5 screen-temperature.sh
+backtick 3 2 2 screen-net.sh
+backtick 4 2 2 screen-battery1.sh
+
+hardstatus alwayslastline
+hardstatus string '%{= dd}%{b}[%{W}%H%{b}][%=%{w}%?%-w%?%{b}(%{W}%n%t*%f%?(%u)%?%{b})%{w}%?%+w%?%?%=%{b}]%101`%100`%1`%2`%3`%4`[%{W}%D %d/%m/%Y %c:%s%{b}]'
+
+startup_message off
+
+screen -t "vim" 0
+stuff "vim^M"
+split 
+resize +12
+focus
+screen -t "fagMail" 2
+stuff "fagMail^M"
+split -v
+focus
+screen -t "mocp" 1
+stuff "mocp^M"
+focus
+
+

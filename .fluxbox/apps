@@ -1,0 +1,8 @@
+[app] (urxvt)
+    [Alpha] {200 200}
+[end]
+
+[app] (skype)
+    [Alpha] {255 255}
+[app]
+

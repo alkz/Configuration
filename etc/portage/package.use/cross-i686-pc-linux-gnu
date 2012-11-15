@@ -1,0 +1,9 @@
+cross-i686-pc-linux-gnu/gdb sys-devel gdb
+cross-i686-pc-linux-gnu/insight dev-util insight
+cross-i686-pc-linux-gnu/binutils -selinux -multilib
+#required by sys-power/upower-0.9.16, required by kde-base/kdelibs-4.8.5[upower], required by kde-base/katepart-4.8.5
+=sys-fs/udev-171-r6 gudev hwdb
+#required by x11-drivers/xf86-video-vmware-12.0.2, required by x11-base/xorg-drivers-1.12[video_cards_vmware], required by x11-base/xorg-server-1.12.2[xorg], required by x11-drivers/xf86-video-dummy-0.3.5-r1
+=media-libs/mesa-8.0.4-r1 xa
+#required by media-video/vlc-2.0.3, required by @selected, required by @world (argument)
+>=sys-libs/zlib-1.2.7 minizip

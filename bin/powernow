@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+# powerdown - get energy usagei
+
+if [[ $EUID != 0 ]]; then
+  echo "[powerdown] must be run as root"
+  exit 1
+fi
+
+source /usr/lib/powerdown-functions
+
+display_power
+echo
+echo " :: Detail"
+
+# nmi_watchdog
+dump /proc/sys/kernel/nmi_watchdog
+
+# cpu
+for i in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do dump $i; done
+#for i in /sys/devices/system/cpu/cpu*/online; do dump $i; done
+
+# aspm
+dump /sys/module/pcie_aspm/parameters/policy
+
+# kernel write mode
+dump /proc/sys/vm/laptop_mode
+dump /proc/sys/vm/dirty_ratio
+dump /proc/sys/vm/dirty_background_ratio
+dump /proc/sys/vm/dirty_expire_centisecs
+dump /proc/sys/vm/dirty_writeback_centisecs
+
+
+# Disk powersave
+for dev in $(awk '/^\/dev\/sd/ {print $1}' /etc/mtab); do display_readahead $dev; done
+for i in /sys/class/scsi_host/host*/link_power_management_policy; do dump $i; done
+
+# Sound card powersave
+dump /sys/module/snd_hda_intel/parameters/power_save
+dump /sys/module/snd_hda_intel/parameters/power_save_controller
+dump /sys/module/snd_ac97_codec/parameters/power_save
+
+# wlan0/eth0 powersave
+
+# Screen powersave
+for i in /sys/class/backlight/acpi_video*/brightness; do dump $i; done
+dump /sys/module/i915/parameters/i915_enable_rc6
+
+# wireless
+display_wireless wlan0
+# webcam
+display_module uvcvideo
+display_module nouveau
+
+# bluetooth
+display_module btusb
+display_module bluetooth

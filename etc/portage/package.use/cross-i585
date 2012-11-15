@@ -1,0 +1,3 @@
+cross-i585/gdb sys-devel gdb
+cross-i585/insight dev-util insight
+cross-i585/binutils -selinux -multilib

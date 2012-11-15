@@ -1,0 +1,6 @@
+cross-i586-pc-linux-gnu/gdb sys-devel gdb
+cross-i586-pc-linux-gnu/insight dev-util insight
+cross-i586-pc-linux-gnu/binutils -selinux -multilib
+cross-i586-pc-linux-gnu/linux-headers -selinux -multilib
+cross-i586-pc-linux-gnu/glibc -selinux -multilib
+cross-i586-pc-linux-gnu/gcc -selinux -boundschecking -d -gtk -gcj -libffi -mudflap -objc -objc++ -objc-gc -fortran nocxx -openmp -multilib

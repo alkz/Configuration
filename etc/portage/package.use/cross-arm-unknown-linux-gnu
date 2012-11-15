@@ -1,0 +1,6 @@
+cross-arm-unknown-linux-gnu/gdb sys-devel gdb
+cross-arm-unknown-linux-gnu/insight dev-util insight
+cross-arm-unknown-linux-gnu/binutils -selinux -multilib
+cross-arm-unknown-linux-gnu/linux-headers -selinux -multilib
+cross-arm-unknown-linux-gnu/glibc -selinux -multilib
+cross-arm-unknown-linux-gnu/gcc -selinux -boundschecking -d -gtk -gcj -libffi -mudflap -objc -objc++ -objc-gc -fortran nocxx -openmp -multilib

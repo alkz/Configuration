@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# powerdown - powerup
+
+if [[ $EUID != 0 ]]; then
+  echo "[powerdown] must be run as root"
+  exit 1
+fi
+
+source /usr/lib/powerdown-functions
+
+lock
+
+# usb autosuspend
+for i in /sys/bus/usb/devices/*/power/autosuspend; do opt $i 600; done
+
+# cpu
+#for i in /sys/devices/system/cpu/cpu*/online; do opt $i 1; done
+for i in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do opt $i performance; done
+
+# kernel write mode
+opt /proc/sys/vm/laptop_mode 0
+opt /proc/sys/vm/dirty_ratio 30
+opt /proc/sys/vm/dirty_background_ratio 10
+opt /proc/sys/vm/dirty_expire_centisecs 600
+opt /proc/sys/vm/dirty_writeback_centisecs 600
+
+# Disk powersave
+for i in /sys/class/scsi_host/host*/link_power_management_policy; do opt $i max_performance; done
+
+# wlan0/eth0 powersave
+run iw dev wlan0 set power_save off
+
+# Screen powersave
+for i in /sys/class/backlight/acpi_video*/brightness; do opt $i 9; done
+
+# Disable webcam
+load_mod uvcvideo
+#load_mod videodev
+load_mod nouveau
+
+# Disable bluetooth
+load_mod btusb
+load_mod bluetooth

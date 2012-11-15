@@ -172,6 +172,10 @@ bindsym $mod+Mod4+Down exec amixer --quiet set Master 1-
 bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
+bindsym Mod4+g exec /opt/tuxguitar/tuxguitar
+
+bindsym $mod+m exec urxvt -e alsamixer
+
 bindsym $mod+i exec /usr/bin/start_workspaces.sh
 
 # programs in specific workspace
@@ -180,6 +184,8 @@ assign [class="Skype"] 7: social1
 
 assign [class="VirtualBox"] 3: virtual
 
+assign [class="TuxGuitar"] 6: stuff2
+
 for_window [class="Thunar"] floating toggle
 
 for_window [class="Xpdf"] floating toggle
@@ -187,8 +193,8 @@ for_window [class="Xpdf"] floating toggle
 bindsym $mod+1 workspace "1: docs1"
 bindsym $mod+2 workspace "2: work"
 bindsym $mod+3 workspace "3: virtual"
-bindsym $mod+4 workspace "4: docs2"
-bindsym $mod+5 workspace "5: stuff1"
+bindsym $mod+4 workspace "4: stuff1"
+bindsym $mod+5 workspace "5: docs2"
 bindsym $mod+6 workspace "6: stuff2"
 bindsym $mod+7 workspace "7: social1"
 bindsym $mod+8 workspace "8: social2"
@@ -199,8 +205,8 @@ bindsym $mod+0 workspace "10: tests"
 bindsym $mod+Shift+exclam move container to workspace "1: docs1"
 bindsym $mod+Shift+at move container to workspace "2: work"
 bindsym $mod+Shift+numbersign move container to workspace "3: virtual"
-bindsym $mod+Shift+dollar move container to workspace "4: docs2"
-bindsym $mod+Shift+percent move container to workspace "5: stuff1"
+bindsym $mod+Shift+dollar move container to workspace "4: stuff1"
+bindsym $mod+Shift+percent move container to workspace "5: docs2"
 bindsym $mod+Shift+asciicircum move container to workspace "6: stuff2"
 bindsym $mod+Shift+ampersand move container to workspace "7: social1"
 bindsym $mod+Shift+asterisk move container to workspace "8: social2"
@@ -211,12 +217,12 @@ bindsym $mod+Shift+parenright move container to workspace "10: tests"
 # outputs dual head and named workspace
 workspace "1: docs1"    output VGA-0
 workspace "3: virtual" output VGA-0
-workspace "5: stuff1"   output VGA-0
+workspace "5: docs2"   output VGA-0
 workspace "7: social1"  output VGA-0
 workspace "9: stuff3"  output VGA-0
 
 workspace "2: work" output LVDS
-workspace "4: docs2" output LVDS
+workspace "4: stuff1" output LVDS
 workspace "6: stuff2" output LVDS
 workspace "8: social2" output LVDS
 workspace "10: tests" output LVDS

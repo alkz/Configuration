@@ -4,7 +4,7 @@ Xft.hintstyle:              hintfull
 Xft.antialias:              1 
 Xft.rgba:                   rgb
 
-URxvt*termName:             rxvt
+URxvt*termName:             rxvt-256color
 URxvt*buffered:             true
 URxvt*showMenu:             false
 URxvt*veryBoldFont:         false
@@ -19,15 +19,26 @@ URxvt*scrollTtyOutput:      false
 URxvt*scrollTtyKeypress:    true
 URxvt*internalBorder:       0
 URxvt*externalBorder:       0
-URxvt*transparent:          false
-URxvt*shading:              20
+URxvt*transparent:          true
+URxvt*shading:              50
+
+#URxvt*font:                  xft:Anonymous Pro for Powerline:regular:size=8
+#URxvt*imFont:               xft:Anonymous Pro for Powerline:regular:size=8
+#URxvt*boldFont:             xft:Anonymous Pro for Powerline:bold:size=8
+#URxvt*italicFont:           xft:Anonymous Pro for Powerline:italic:size=8
+#URxvt*boldItalicFont:       xft:Anonymous Pro for Powerline:bold:italic:size=8
+URxvt*font: xft:GohuFont:style=Regular:antialias=false:size=9, \
+            xft:Verdana:style=Regular:antialias=false
+
+URxvt*boldFont: xft:GohuFont:style=Bold:antialias=false:size=9, \
+                xft:Verdana:style=Bold:antialias=false
 
 URxvt*background:           rgba:0000/0000/0000/dddd
 URxvt*foreground:           gray
 URxvt*colorBD:              white
 URxvt*colorIT:              white
-URxvt*underlineColor:       #b21818
-URxvt*cursorColor:          #b21818
+URxvt*underlineColor:       darkblue
+URxvt*cursorColor:          darkblue
 URxvt*cursorColor2:         #ffffff
 URxvt*color0:               #000000
 URxvt*color1:               #b21818
@@ -46,10 +57,13 @@ URxvt*color13:              #FF54FF
 URxvt*color14:              #54FFFF
 URxvt*color15:              #FFFFFF
 
+
+URxvt*perl-lib:             /home/alkz/.urxvt/urxvt-perls
 URxvt*perl-ext-common:      default,matcher,url-select
 URxvt*keysym.4-Tab:         perl:url-select:select_next
 URxvt*underlineURLs:        true
-URxvt*urlLauncher:          firefox
+Rxvt*url-select.launcher:   nightly
+URxvt*url-select.autocopy:  true
 URxvt*matcher.button:       1
 
 URxvt*keysym.Control-Up:    \033[1;5A
@@ -57,23 +71,3 @@ URxvt*keysym.Control-Down:  \033[1;5B
 URxvt*keysym.Control-Left:  \033[1;5D
 URxvt*keysym.Control-Right: \033[1;5C
 
-XTerm*geometry:   40x25
-XTerm*font:       c64
-XTerm*foreground: #a396ff
-XTerm*background: #4e44d8
-XTerm*color0:     #a396ff
-XTerm*color1:     #a396ff
-XTerm*color2:     #a396ff
-XTerm*color3:     #a396ff
-XTerm*color4:     #a396ff
-XTerm*color5:     #a396ff
-XTerm*color6:     #a396ff
-XTerm*color7:     #a396ff
-XTerm*color8:     #a396ff
-XTerm*color9:     #a396ff
-XTerm*color10:    #a396ff
-XTerm*color11:    #a396ff
-XTerm*color12:    #a396ff
-XTerm*color13:    #a396ff
-XTerm*color14:    #a396ff
-XTerm*color15:    #a396ff

@@ -18,16 +18,17 @@ alias tail='tail -3000f'
 
 #prompt clint
 
+export ANDROID_SDK="/opt/androidSDK/adt-bundle-linux/sdk"
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
-export PATH=$PATH:/opt/devkitpro/devkitARM/bin:/usr/llvm-gcc4.2-2.9-x86_64-linux/bin
+export PATH=$PATH:/opt/devkitpro/devkitARM/bin:/usr/llvm-gcc4.2-2.9-x86_64-linux/bin:$ANDROID_SDK/tools:$ANDROID_SDK/platform-tools
 export CPATH="/usr/local/boost_1_48_0/"
 export LIBRARY_PATH="/usr/local/boost_1_48_0/stage/lib":$LIBRARY_PATH
 export LD_LIBRARY_PATH="/usr/local/boost_1_48_0/stage/lib":$LD_LIBRARY_PATH
 
 export SAVEHIST=$HISTSIZE
 
-export CLASSPATH=/usr/share/servletapi-2.4/lib/servlet-api.jar:.:/opt/JDBC/:/opt/json.org/json-org.jar
+export CLASSPATH=/usr/share/servletapi-2.4/lib/servlet-api.jar:.:/opt/JDBC/sqljdbc.jar:/opt/json.org/json-org.jar:/opt/hyperic-sigar/sigar-bin/lib/sigar.jar:/opt/commons-net-3.2.jar
 
 setopt hist_ignore_all_dups
 

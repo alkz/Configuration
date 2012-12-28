@@ -19,7 +19,7 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal &
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -140,6 +140,13 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 #
 bar {
+    font xft:GohuFont:h5
+    colors  {        
+        focused_workspace  #ffffff #b21818 #ffffff
+        active_workspace   #333333 #621818 #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+    }
 }
 
 
@@ -150,14 +157,20 @@ exec --no-startup-id /usr/bin/open_workspaces.sh
 # programs classes
 
 # personal keys
-bindsym $mod+q exec urxvt
+bindsym $mod+q exec urxvt &
 bindsym $mod+w exec nightly
 bindsym $mod+p [class="Pidgin"] exec pidgin
-bindsym $mod+z [class="Skype"] exec skype
-bindsym $mod+e exec/opt/eclipse/eclipse
+bindsym $mod+z [class="Skype"] exec skype --dbpath ~/.Skype.alkz
+bindsym $mod+c [class="Skype"] exec skype --dbpath ~/.Skype.astor
+bindsym $mod+e exec  GTK2_RC_FILES=.themes/Elegant\ Brit/gtk-2.0/gtkrc /opt/eclipse/eclipse
+bindsym Mod4+a exec  GTK2_RC_FILES=.themes/Elegant\ Brit/gtk-2.0/gtkrc audacity
+bindsym Mod4+j exec java -jar ~/.jd/JDownloader.jar &
+bindsym $mod+Mod4+g exec gimp &
 bindsym $mod+v exec i3-sensible-terminal -e sudo VirtualBox &
 bindsym $mod+t exec thunar
 bindsym Mod4+s exec start_wsession.sh
+bindsym Mod4+t exec /opt/teamviewer7/teamviewer &
+bindsym $mod+Mod4+t exec  GTK2_RC_FILES=.themes/Elegant\ Brit/gtk-2.0/gtkrc    /opt/thunderbird/thunderbird &
 
 bindsym $mod+Mod4+n exec mocp --next
 bindsym $mod+Mod4+p exec mocp --previous
@@ -185,6 +198,8 @@ assign [class="Skype"] 7: social1
 assign [class="VirtualBox"] 3: virtual
 
 assign [class="TuxGuitar"] 6: stuff2
+
+assign [class="Gxine"] 6: stuff2
 
 for_window [class="Thunar"] floating toggle
 
@@ -227,3 +242,8 @@ workspace "6: stuff2" output LVDS
 workspace "8: social2" output LVDS
 workspace "10: tests" output LVDS
 
+
+ipc-socket ~/.i3/ipc.sock
+client.focused #888888 #888888 #000000 #888888
+client.unfocused #b21818 #b21818 #000000 #b21818
+client.focused_inactive #b21818 #b21818 #000000 #b21818

@@ -1,0 +1,11 @@
+set editor="urxvt -e vim -R -c 'set wrap nonu'"
+colorscheme darkblood
+set gui=tabs
+
+
+map  <S-Z> :tabnew<CR>
+map  <S-Q> :tabclose<CR>
+map  <S-H> :tabprevious<CR>
+map  <S-L> :tabnext<CR>
+
+alias e o

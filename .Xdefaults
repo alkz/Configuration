@@ -4,7 +4,7 @@ Xft.hintstyle:              hintfull
 Xft.antialias:              1 
 Xft.rgba:                   rgb
 
-URxvt*termName:             rxvt-256color
+URxvt*termName:             screen-256color
 URxvt*buffered:             true
 URxvt*showMenu:             false
 URxvt*veryBoldFont:         false
@@ -17,8 +17,8 @@ URxvt*saveLines:            31337
 URxvt*secondaryScroll:      true
 URxvt*scrollTtyOutput:      false
 URxvt*scrollTtyKeypress:    true
-URxvt*internalBorder:       0
-URxvt*externalBorder:       0
+#URxvt*internalBorder:       0
+#URxvt*externalBorder:       0
 URxvt*transparent:          true
 URxvt*shading:              50
 
@@ -35,10 +35,9 @@ URxvt*boldFont: xft:GohuFont:style=Bold:antialias=false:size=9, \
 
 URxvt*background:           rgba:0000/0000/0000/dddd
 URxvt*foreground:           gray
-URxvt*colorBD:              white
-URxvt*colorIT:              white
-URxvt*underlineColor:       darkblue
-URxvt*cursorColor:          darkblue
+URxvt*foreground:           gray
+URxvt*underlineColor:       #b21818
+URxvt*cursorColor:          #b21818
 URxvt*cursorColor2:         #ffffff
 URxvt*color0:               #000000
 URxvt*color1:               #b21818

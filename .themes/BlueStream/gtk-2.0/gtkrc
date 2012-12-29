@@ -11,8 +11,8 @@ gtk-menu-images = 0
 
 style "pidgin"
 {
-    text[NORMAL] = "#000000"
-    base[NORMAL] = "#FFFFFF"
+    text[NORMAL] = "#FFFFFF"
+    base[NORMAL] = "#000000"
 }
 
 style "default"

@@ -1,0 +1,61 @@
+.view.check:insensitive{
+background-color:transparent;
+background-image:url("image/boxunchecked-treeview-insensitive.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check{
+background-image:url("image/boxunchecked-treeview-normal.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:hover{
+background-color:transparent;
+background-image:url("image/boxunchecked-treeview-prelight.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:active:insensitive{
+background-color:transparent;
+background-image:url("image/boxchecked-treeview-insensitive.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:active{
+background-color:transparent;
+background-image:url("image/boxchecked-treeview-normal.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:active:hover{
+background-color:transparent;
+background-image:url("image/boxchecked-treeview-prelight.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:inconsistent:insensitive{
+background-color:transparent;
+background-image:url("image/boxinconsistent-treeview-insensitive.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:inconsistent{
+background-color:transparent;
+background-image:url("image/boxinconsistent-treeview-normal.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}
+
+.view.check:inconsistent:hover{
+background-color:transparent;
+background-image:url("image/boxinconsistent-treeview-prelight.gif");
+background-repeat:no-repeat;
+background-position:50% 50%;
+box-shadow:inset 0px -1px 0px 0px transparent;}

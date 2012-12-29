@@ -1,0 +1,52 @@
+input {
+	border: 2px inset white;
+	background-color: #686868;
+	color: #000000;
+	-moz-appearance: none !important;
+}
+
+textarea {
+	border: 2px inset white;
+	background-color: #686868;
+	color: #000000;
+	-moz-appearance: none !important;
+}
+
+select {
+	border: 2px inset white;
+	background-color: #686868;
+	color: #000000;
+	-moz-appearance: none !important;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	border: 2px inset #ffffff ! important;
+	background-color: #ffffff ! important;
+	color: ThreeDFace ! important;
+	-moz-appearance: none !important;
+}
+
+*|*::-moz-radio {
+	background-color: #ffffff;
+	-moz-appearance: none !important;
+}
+
+button,
+input[type="reset"],
+input[type="button"],
+input[type="submit"] {
+	border: 2px outset #ffffff;
+	background-color: #686868;
+	color: black;
+	-moz-appearance: none !important;
+}
+
+body {
+	background-color: #ffffff;
+	color: #000000;
+	display: block;
+	margin: 8px;
+	-moz-appearance: none !important;
+}
+
